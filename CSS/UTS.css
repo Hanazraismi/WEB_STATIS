@@ -1,0 +1,384 @@
+.main {
+    margin: 0;
+    font-size: 28px;
+    font-family:monospace;
+    text-align: center;
+    background-color: #f1ede5;
+  }
+  
+  .lit {
+    text-align: center;
+    font-size: 25px;
+    font-family: monospace;
+    margin: 0;
+    color: #ef4434;
+  }
+
+  .paragraph {
+    text-align: justify;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+    padding: 15px;
+    color: #000000;
+  }
+  .section {
+    margin-bottom: 20px; 
+    background: #f1ede5; 
+    padding: 15px;
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+
+  .container{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    background-color: #fa857a;
+}
+  /*bagian header*/
+  .header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  /*bagian navbar*/
+  #navbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #fa857a;
+  }
+
+  #navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+  }
+
+  #navbar a.split {
+    float: left;
+    background-color: #ef4434;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 700;
+  }
+
+  #navbar a:hover {
+    background-color: #ef4434;
+    color: black;
+  }
+  
+  #navbar a.active {
+    background-color: #ef4434;
+    color: white;
+  }
+  
+  
+  /*bagian sidebar*/
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fa857a;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 22px;
+    text-decoration: none;
+    font-size: 10px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 35px;
+    margin-left: 40px;
+  }
+  
+  .openbtn {
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #fa857a;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    text-align: left;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+    color: #fa857a;
+  }
+  
+  #mySidebar{
+    color: #e8e1c8;
+    font-size: 15px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  .content {
+    padding: 16px;
+  }
+
+  input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  input[type=text]:focus {
+    width: 100%;
+  }
+
+  .input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+  }
+
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .input-field:focus {
+    border: 2px solid #fa857a;
+  }
+  
+  .btn {
+    background-color: #ef4434;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+
+  .list {
+    text-align: justify;
+    color: #000000;
+    font-size: 18px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+    padding: 15px;
+  }
+
+  .container1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+  .link-box {
+    margin: 10px;
+    padding: 20px;
+    background-color: #d73732;
+    border: 2px solid #e8e1c8;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display:grid ;
+    flex-direction: column;
+    width: 10rem;
+    height: 20rem;
+}
+
+  .link-box p {
+  text-decoration: none;
+  color: #e8e1c8;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+  .read-more {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #fa857a;
+    color: white; 
+    border: none;
+    cursor: pointer;
+}
+
+  .read-more:hover {
+    background-color: #e8e1c8;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #ef4434;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ef4434;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*sosmed*/
+.sosmed {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center; 
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.fa:hover {
+  opacity: 0.7; 
+}
+
+.fa-twitter {
+  background: #55ACEE; 
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000; 
+  color: white; 
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white; 
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.name {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ef4434;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.footer {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #d73732;
+  border-radius: 8px;
+  box-shadow: #000000;
+  color: #e8e1c8;
+  padding: 20px;
+  font-size: 15px;
+}
